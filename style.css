@@ -9,15 +9,14 @@ body * {
   color: black;
 }
 
-#conteiner {
+.conteiner {
   text-align: center;
   margin: 20px auto;
   padding: auto;
-
   /*border: 1px solid red;*/
 }
 
-#profile img {
+.profile img {
   margin-top: 8px;
   display: block;
   width: 150px;
@@ -29,39 +28,37 @@ body * {
   padding: 24px;
 }
 
-#biografia {
-  /*border: 1px solid black;
-    border-radius: 8px;*/
+.biografia {
   padding: 15px;
   background-color: rgba(0, 123, 255, 0.3);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 }
 
-#biografia p {
-  width: 900px;
+.biografia p {
+  max-width: 900px;
   padding: 30px;
   margin: auto;
   text-align: justify;
 }
 
-#listhobbies {
+.listhobbies {
+  max-width: 900px;
   text-align: justify;
-  margin-left: 45px;
-  margin-right: 45px;
+  margin: auto;
 }
 
-#listhobbies h2 {
+.listhobbies h2 {
   text-align: center;
   margin-top: 25px;
   padding: auto;
 }
 
-#listhobbies h3 {
+.listhobbies h3 {
   margin: 13px;
 }
 
-#listhobbies ul {
+.listhobbies ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -94,4 +91,23 @@ footer {
   font-size: 16px;
   font-weight: bold;
   background-color: rgba(0, 123, 255, 0.3);
+}
+
+@media screen and (max-width: 940px) {
+  .listhobbies ul {
+    text-align: justify;
+
+    margin-top: 25px;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .listhobbies ul {
+    flex-direction: column;
+    text-align: justify;
+
+    margin-top: 25px;
+    padding: 25px;
+  }
 }
